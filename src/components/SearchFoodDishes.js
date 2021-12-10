@@ -8,6 +8,10 @@ import { getApiUrl } from "./../constants";
 const SearchFoodDishes = () => {
   const [hits, setHits] = useState();
 
+  const getData = query => {
+    
+  }
+
   return <p>por trabajar</p>;
 };
 
