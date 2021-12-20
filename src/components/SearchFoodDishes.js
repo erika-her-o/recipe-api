@@ -20,14 +20,14 @@ const SearchFoodDishes = () => {
   return (
     <Fragment>
       <div className="root">
-        <Grid container spacing= { 3 } justify="center">
-          <AnyFoodDishes getData={ getData }/> 
-          <PredefinedFoodDishes getData={ getData } setHits={ setHits } />
+        <Grid container spacing={3} justify="center">
+          <AnyFoodDishes getData={getData} />
+          <PredefinedFoodDishes getData={getData} setHits={setHits} />
         </Grid>
       </div>
-      { hits && <FoodDishes hits={ hits } /> }
+      {hits && <FoodDishes hits={hits} />}
     </Fragment>
-  )
+  );
 };
 
 export default SearchFoodDishes;
